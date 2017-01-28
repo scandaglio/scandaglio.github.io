@@ -1,2 +1,3 @@
-# scandaglio.github.io
-Home page di Scandaglio
+# Scandaglio
+
+Main webpage of the project.

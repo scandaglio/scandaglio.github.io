@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% if page.layout != 'home' %}
+      {% include header.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.layout != 'home' %}
+      {% include sides.html %}
+    {% endif %}
+
+    <script src="{{ "/assets/jquery/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/jquery-ripples/jquery.ripples.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/d3/d3.min.js" | prepend: site.baseurl }}"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    {% if page.custom-libs%}
+      {% for lib in page.custom-libs%}
+        <script src="{{ lib }}"></script>
+      {% endfor %}
+    {% endif %}
+    <script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
+    {% if page.custom-js%}
+      {% for js in page.custom-js%}
+        <script src="{{ js | prepend: "/js/" | prepend: site.baseurl }}"></script>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>

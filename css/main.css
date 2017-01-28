@@ -1,0 +1,363 @@
+body{
+  padding-top: 70px;
+  font-family: 'Noto Serif', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: white;
+  color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Space Mono', monospace;
+}
+
+#home{
+  min-height: 100vh;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+#home > .row{
+  width: 100%;
+}
+
+#home .title{
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid white;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+#home .subtitle{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  margin-top: -1px;
+  display: inline-block;
+  float: right!important;
+}
+
+#home .ex-link{
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+#home .ex-link:hover{
+  text-decoration: line-through;
+  color: white;
+}
+
+#home .ex-link:visited{
+  text-decoration: line-through;
+  color: white;
+}
+#home .btn i{
+  align-self: center;
+}
+
+#home .btn{
+  border-radius: 0px;
+  border-left: none;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+
+#home .btn-default {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    transition: all 0.5s;
+}
+
+#home .btn-default:hover{
+  background-color: white;
+  color: black;
+}
+
+#home .btn:focus{
+  outline: none;
+}
+
+#home .btn.active, .btn:active{
+  box-shadow: none;
+}
+
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+
+.navbar {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand{
+  font-weight: bold;
+}
+
+.navbar .navbar-brand.normalWeight{
+  font-weight: normal;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover{
+  color: black;
+}
+
+.navbar-default {
+  background-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a.normalWeight {
+    font-weight: normal;
+}
+
+.navbar-default .navbar-nav.navbar-right>li:not(:last-child){
+    border-bottom: 1px solid white;
+}
+
+.navbar-default .navbar-nav.navbar-right>li>a {
+    font-size: 14px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-nav:not(.navbar-right) {
+  border-bottom: 1px solid black;
+}
+
+#navbar>ul li>a:before{
+  content: ""
+}
+
+.page h2{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.s-border{
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+}
+
+.page .post-number,
+.page .post-meta{
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page .post-meta a{
+  color: black;
+  text-decoration: none;
+  background: white;
+  transition: all 0.5s;
+}
+
+.page .post-meta a:hover{
+  color: white;
+  text-decoration: none;
+  background: black;
+}
+
+.page .post-meta .s-border{
+  margin-top: 5px;
+}
+
+.page .post-content{
+  font-size: 16px;
+  width: 100%;
+}
+
+.page .page-content{
+  font-size: 16px;
+}
+
+.page .page-content blockquote{
+  font-size: 18px;
+  border-left: none;
+}
+
+.page .post-date{
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.page .post-disabled{
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+#contactus{
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+
+  padding: 0px 15px;
+
+}
+
+#contactus a{
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+#contactus a:hover{
+  text-decoration: line-through;
+  color: black;
+
+}
+
+.page #map {
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px){
+  #home .title{
+    font-size: 72px;
+  }
+
+  #home .subtitle{
+    font-size: 30px;
+  }
+
+  #home .btn{
+    font-size: 45px;
+    padding: 6px 20px;
+  }
+
+  #home .ex-link{
+    font-size: 20px;
+  }
+
+  #contactus, #aboutus{
+    display: flex;
+    display: -webkit-flex;
+  }
+
+  #navbar .navbar-right {
+      display: none!important;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse {
+      background-color: white;
+  }
+
+  #navbar>ul:not(.navbar-right) li>a:before{
+    content: "| ";
+    font-weight: normal;
+  }
+
+  .navbar-nav:not(.navbar-right) {
+    border-bottom: none;
+  }
+
+  .page .post-content{
+    font-size: 18px;
+    width: 60%;
+  }
+
+  .page .page-content{
+    font-size: 18px;
+  }
+
+  .nav>li>a {
+    padding: 15px 15px 10px 0px;
+  }
+
+  #contactus{
+    display: flex;
+    display: -webkit-flex;
+  }
+
+}

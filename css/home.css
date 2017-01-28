@@ -1,0 +1,18 @@
+body{
+  color: white;
+  background: black;
+  background-image: url('../media/idroscalo.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+body:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  z-index: -1;
+}

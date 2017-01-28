@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div id="chapters" class="container page">
+  <div class="row">
+    <div class="col-md-offset-1  col-md-12">
+      <h2><span class="s-border">capitoli</span> <span class="s-border">:</span></h2>
+    </div>
+  </div>
+  {% for post in site.posts reversed %}
+  <div class="row{% if post.online == false %} post-disabled{% endif%}">
+    <div class="col-md-1">
+      <p class="post-number">
+        <span class="s-border">{{ forloop.index | prepend: '0'}}</span>
+      </p>
+    </div>
+    <div class="col-md-10 col-md-offset-1">
+      <p class="post-meta">
+        <a class="s-border" href="{{ post.link }}" target="_blank">esplora</a> <span class="s-border">/</span>
+        <a class="s-border" href="{{ post.github }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> {{post.title}} </a> <span class="s-border">?</span>
+        <span class="s-border">{{ post.categories | array_to_sentence_string }}</span>
+      </p>
+        {{ post.content }}
+      <p class="post-date">
+        <span class="s-border">{{ post.date | date_to_long_string }}</span>
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
